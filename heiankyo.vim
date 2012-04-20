@@ -59,11 +59,11 @@ hi Repeat         gui=bold guifg=#3eb370 guibg=#333631
 "	Define(#define)
 "	Macro(equals to #define)
 "	PreCondit(#if, #else, #endif, ...)
-hi Define         gui=none guifg=#0095d9ni guibg=#333631
-hi Include        gui=none guifg=#0095d9ni guibg=#333631
-hi Macro          gui=none guifg=#0095d9ni guibg=#333631
-hi PreCondit      gui=none guifg=#0095d9ni guibg=#333631
-hi PreProc        gui=none guifg=#0095d9ni guibg=#333631
+hi Define         gui=none guifg=#0095d9 guibg=#333631
+hi Include        gui=none guifg=#0095d9 guibg=#333631
+hi Macro          gui=none guifg=#0095d9 guibg=#333631
+hi PreCondit      gui=none guifg=#0095d9 guibg=#333631
+hi PreProc        gui=none guifg=#0095d9 guibg=#333631
 
 " Types
 "	Type(int, char, long, ...)
@@ -81,18 +81,18 @@ hi Typedef        gui=bold guifg=#88cb7f guibg=#333631
 "	Tag(Ctl-])
 "	Delimiter,SpecialComment
 "	Debug(debug statements)
-hi Debug          gui=none guifg=#ffffffnezu guibg=#333631
-hi Delimiter      gui=none guifg=#ffffffnezu guibg=#333631
-hi Special        gui=none guifg=#ffffffnezu guibg=#333631
-hi SpecialChar    gui=none guifg=#ffffffnezu guibg=#333631
+hi Debug          gui=none guifg=#ffffff guibg=#333631
+hi Delimiter      gui=none guifg=#ffffff guibg=#333631
+hi Special        gui=none guifg=#ffffff guibg=#333631
+hi SpecialChar    gui=none guifg=#ffffff guibg=#333631
 hi SpecialComment gui=italic guifg=#e83929 guibg=#333631
-hi Tag            gui=none guifg=#ffffffnezu guibg=#333631
+hi Tag            gui=none guifg=#ffffff guibg=#333631
 
 " Errors and Warnings
 hi Error          gui=bold guifg=#d3381c guibg=#333631
 hi ErrorMsg       gui=bold guifg=#d3381c guibg=#333631
-hi Todo           gui=none guifg=#333631 guibg=#ffffffnezu
-hi WarningMsg     gui=bold guifg=#333631 guibg=#ffffffnezu
+hi Todo           gui=none guifg=#333631 guibg=#ffffff
+hi WarningMsg     gui=bold guifg=#333631 guibg=#ffffff
 
 " Others
 "	Underlined(hyperlinks(HTML), ...)
@@ -104,8 +104,8 @@ hi Ignore         gui=none guifg=#333631 guibg=#333631
 "	Cursor(character in the cursor)
 "	CursorIM(character in the cursor when IME is ON)
 hi Cursor         gui=none guifg=#333631 guibg=#f8fbf8
-hi CursorIM       gui=none guifg=#0095d9ni guibg=#adadad
-hi lCursor        gui=none guifg=#0095d9ni guibg=#adadad
+hi CursorIM       gui=none guifg=#0095d9 guibg=#adadad
+hi lCursor        gui=none guifg=#0095d9 guibg=#adadad
 hi CursorLine     gui=underline guibg=#333631
 
 " Diff
@@ -115,28 +115,28 @@ hi DiffDelete     gui=none guifg=#f8fbf8 guibg=#3eb370
 hi DiffText       gui=bold guifg=#333631 guibg=#adadad
 
 " Areas
-hi IncSearch      gui=none guifg=#e60033neiro guibg=#ffffffnezu
-hi MatchParen     gui=none guifg=#e60033neiro guibg=#ffffffnezu
-hi Search         gui=none guifg=#e60033neiro guibg=#ffffffnezu
-hi Visual         gui=none guifg=#e60033neiro guibg=#ffffffnezu
-hi VisualNOS      gui=underline guifg=#ffffffnezu guibg=#333631
+hi IncSearch      gui=none guifg=#e60033 guibg=#ffffff
+hi MatchParen     gui=none guifg=#e60033 guibg=#ffffff
+hi Search         gui=none guifg=#e60033 guibg=#ffffff
+hi Visual         gui=none guifg=#e60033 guibg=#ffffff
+hi VisualNOS      gui=underline guifg=#ffffff guibg=#333631
 
 " Window elements
 "	ModeMsg(--INSERT--)
 "	StatusLineNC(Non-Current Windows's status line)
 "	Question('yes|no' question)
 hi Directory      gui=none guifg=#adadad guibg=#333631
-hi FoldColumn     gui=bold guifg=#ffffffnezu guibg=#0095d9ni
-hi Folded         gui=bold guifg=#ffffffnezu guibg=#0095d9ni
+hi FoldColumn     gui=bold guifg=#ffffff guibg=#0095d9ni
+hi Folded         gui=bold guifg=#ffffff guibg=#0095d9ni
 hi LineNr         gui=underline guifg=#e83929 guibg=#333631
-hi ModeMsg        gui=bold guifg=#ffffffnezu guibg=#333631
-hi MoreMsg        gui=bold guifg=#ffffffnezu guibg=#333631
-hi Question       gui=bold guifg=#ffffffnezu guibg=#333631
+hi ModeMsg        gui=bold guifg=#ffffff guibg=#333631
+hi MoreMsg        gui=bold guifg=#ffffff guibg=#333631
+hi Question       gui=bold guifg=#ffffff guibg=#333631
 hi StatusLine     gui=bold guifg=#d4dcd6 guibg=#e83929
 hi StatusLineNC   gui=bold guifg=#d4dcd6 guibg=#e83929
 hi Title          gui=bold guifg=#adadad guibg=#333631
-hi WildMenu       gui=none guifg=#0095d9ni guibg=#adadad
-hi VertSplit      gui=none guifg=#ffffffnezu guibg=#ffffffnezu
+hi WildMenu       gui=none guifg=#0095d9 guibg=#adadad
+hi VertSplit      gui=none guifg=#ffffff guibg=#ffffff
 
 " Non texts
 "	NonText(~,@,character specified by 'showbreak')
