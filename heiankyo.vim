@@ -1,8 +1,8 @@
 " Heiankyo colorscheme
 " $Id: heiankyo.vim,v 1.4 2010/01/31 23:43:04 ak Exp $
 " Author:      azumakuniyuki
-" Version:     1.0.7
-" Last Change: Sun,  8 Jan 2012 02:16:37 +0900 (JST)
+" Version:     1.0.8
+" Last Change: Sat, 21 Apr 2012 02:22:09 +0900 (JST)
 
 set background=dark
 hi clear
