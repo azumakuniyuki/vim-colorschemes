@@ -12,5 +12,5 @@
   * tatami.vim ----------------- Tatami, 畳
 
 ## See also
-  * [http://www.colordic.org/w/][日本の伝統色 和色大辞典 - Traditional Japanese Color Names]
+  * [日本の伝統色 和色大辞典 - Traditional Japanese Color Names](http://www.colordic.org/w/)
 
