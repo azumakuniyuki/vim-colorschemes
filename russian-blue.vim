@@ -1,10 +1,9 @@
 " Russinan Blue colorscheme
 " Author:      azumakuniyuki
-" Version:     1.0.0
-" Last Change: Sun, 22 Apr 2012 05:18:42 +0900 (JST)
+" Version:     1.0.1
+" Last Change: Wed, 25 Apr 2012 14:58:59 +0900 (JST)
 
-" See http://ja.wikipedia.org/wiki/ロシアンブルー
-"     http://en.wikipedia.org/wiki/Russian_Blue
+" See http://en.wikipedia.org/wiki/Russian_Blue
 
 set background=dark
 hi clear
@@ -32,10 +31,10 @@ hi Comment        gui=italic guifg=#80989b guibg=#474a4d
 "	String('string')
 hi Constant       gui=none guifg=#dddcd6 guibg=#474a4d
 hi Boolean        gui=bold guifg=#dddcd6 guibg=#474a4d
-hi Character      gui=none guifg=#c0c6c9 guibg=#474a4d
+hi Character      gui=none guifg=#dcdddd guibg=#595857
 hi Float          gui=none guifg=#dddcd6 guibg=#474a4d
 hi Number         gui=none guifg=#dddcd6 guibg=#474a4d
-hi String         gui=none guifg=#c0c6c9 guibg=#474a4d
+hi String         gui=none guifg=#dcdddd guibg=#595857
 
 " Identifier(variable names)
 " Function(function names)
