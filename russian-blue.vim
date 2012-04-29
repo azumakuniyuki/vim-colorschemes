@@ -1,6 +1,6 @@
 " Russinan Blue colorscheme
 " Author:      azumakuniyuki
-" Version:     1.0.1
+" Version:     1.0.2
 " Last Change: Wed, 25 Apr 2012 14:58:59 +0900 (JST)
 
 " See http://en.wikipedia.org/wiki/Russian_Blue
@@ -84,8 +84,8 @@ hi Typedef        gui=bold guifg=#eaf4fc guibg=#474a4d
 "	Debug(debug statements)
 hi Debug          gui=none guifg=#bce2e8 guibg=#474a4d
 hi Delimiter      gui=none guifg=#bce2e8 guibg=#474a4d
-hi Special        gui=none guifg=#bce2e8 guibg=#474a4d
-hi SpecialChar    gui=none guifg=#bce2e8 guibg=#474a4d
+hi Special        gui=none guifg=#f4b3c2 guibg=#474a4d
+hi SpecialChar    gui=none guifg=#f4b3c2 guibg=#474a4d
 hi SpecialComment gui=italic guifg=#426579 guibg=#474a4d
 hi Tag            gui=none guifg=#bce2e8 guibg=#474a4d
 
