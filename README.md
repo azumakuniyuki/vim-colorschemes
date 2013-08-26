@@ -8,6 +8,7 @@
   * mikeneko.vim --------------- Calico cat: 三毛猫
   * nebuchadnezzar.vim --------- King of the Neo-Babylonian Empire.
   * russian-blue.vim ----------- Russan blue: ロシアンブルー(猫)
+  * shironeko.vim -------------- White cat, 白猫
   * soba.vim ------------------- Soba, 蕎麦
   * tatami.vim ----------------- Tatami, 畳
 
