@@ -1,7 +1,7 @@
 " Mikeneko colorscheme
 " Author:      azumakuniyuki
-" Version:     1.0.0
-" Last Change: Sat, 21 Apr 2012 03:06:52 +0900 (JST)
+" Version:     1.0.1
+" Last Change: Thu, 31 Jan 2013 14:35:26 +0900 (JST)
 
 " See http://ja.wikipedia.org/wiki/三毛猫
 "     http://en.wikipedia.org/wiki/Calico_cat
@@ -143,8 +143,8 @@ hi VertSplit      gui=none guifg=#f4b3c2 guibg=#f4b3c2
 " Non texts
 "	NonText(~,@,character specified by 'showbreak')
 "	SpecialKey(keys defined by ':map', nonprintables)
-hi NonText        gui=none guifg=#000b00 guibg=#16160e
-hi SpecialKey     gui=none guifg=#000b00 guibg=#16160e
+hi NonText        gui=none guifg=#241a08 guibg=#16160e
+hi SpecialKey     gui=none guifg=#241a08 guibg=#16160e
 
 
 "     
