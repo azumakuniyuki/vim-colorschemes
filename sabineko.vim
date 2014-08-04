@@ -1,7 +1,7 @@
 " Sabineko colorscheme
 " Author:      azumakuniyuki
-" Version:     1.0.2
-" Last Change: Sun,  8 Jun 2014 17:19:34 +0900 (JST)
+" Version:     1.0.3
+" Last Change: Mon,  4 Aug 2014 14:23:49 +0900 (JST)
 
 " See http://ja.wikipedia.org/wiki/三毛猫
 "     http://en.wikipedia.org/wiki/Calico_cat
