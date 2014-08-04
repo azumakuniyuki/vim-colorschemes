@@ -21,7 +21,7 @@ let g:colors_name = 'Mikeneko'
 hi Normal         gui=none guifg=#afafb0 guibg=#16160e
 "
 " Comment(/** **/, //...)
-hi Comment        gui=italic guifg=#383c3c guibg=#16160e
+hi Comment        gui=italic guifg=#595857 guibg=#16160e
 
 " Constants
 "	Boolean(true,false)
