@@ -1,8 +1,8 @@
 " Tatami colorscheme
 " $Id: tatami.vim,v 1.4 2010/01/31 23:43:04 ak Exp $
 " Author:      azumakuniyuki
-" Version:     1.0.4
-" Last Change: Sun,  8 Jan 2012 02:25:05 +0900 (JST)
+" Version:     1.0.5
+" Last Change: Fri,  9 Oct 2015 17:31:39 +0900 (JST)
 
 set background=dark
 hi clear
@@ -103,10 +103,11 @@ hi Ignore         gui=none guifg=#a8c97f guibg=#a8c97f
 " Cursors,
 "	Cursor(character in the cursor)
 "	CursorIM(character in the cursor when IME is ON)
-hi Cursor         gui=none guifg=#a8c97f guibg=#fffffc
+hi Cursor         gui=none guifg=#a8c97f guibg=#333631
 hi CursorIM       gui=none guifg=#2f5d50 guibg=#333631
 hi lCursor        gui=none guifg=#2f5d50 guibg=#333631
-hi CursorLine     gui=underline guibg=#a8c97f
+hi CursorLine     gui=none               guibg=#cee4ae
+hi CursorColumn   gui=none               guibg=#cee4ae
 
 " Diff
 hi DiffAdd        gui=bold guifg=#333631 guibg=#2f5d50
@@ -127,6 +128,7 @@ hi VisualNOS      gui=underline guifg=#494a41 guibg=#a8c97f
 "	Question('yes|no' question)
 hi Directory      gui=none guifg=#333631 guibg=#a8c97f
 hi FoldColumn     gui=bold guifg=#cee4ae guibg=#2f5d50
+hi ColorColumn    gui=none guifg=#cee4ae guibg=#82ae46
 hi Folded         gui=bold guifg=#cee4ae guibg=#2f5d50
 hi LineNr         gui=underline guifg=#aacf53 guibg=#333631
 hi ModeMsg        gui=bold guifg=#494a41 guibg=#a8c97f
