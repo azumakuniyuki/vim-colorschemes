@@ -1,7 +1,7 @@
 " Mikeneko colorscheme
 " Author:      azumakuniyuki
-" Version:     1.0.0
-" Last Change: Mon,  9 Jun 2014 07:55:33 +0900 (JST)
+" Version:     1.0.1
+" Last Change: Fri,  9 Oct 2015 17:31:19 +0900 (JST)
 " See Also:    http://ja.wikipedia.org/wiki/三毛猫
 
 set background=light
@@ -126,6 +126,7 @@ hi VisualNOS      gui=underline guifg=#383c3c guibg=#fcc800
 "	StatusLineNC(Non-Current Windows's status line)
 "	Question('yes|no' question)
 hi Directory      gui=none guifg=#595857 guibg=#f8fbf8
+hi ColorColumn    gui=none               guibg=#f8b500
 hi FoldColumn     gui=bold guifg=#383c3c guibg=#f39800
 hi Folded         gui=bold guifg=#383c3c guibg=#f39800
 hi LineNr         gui=underline guifg=#c0c6c9 guibg=#f8fbf8
