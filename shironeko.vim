@@ -1,7 +1,7 @@
 " Shironeko colorscheme
 " Author:      azumakuniyuki
-" Version:     1.0.0
-" Last Change: Mon, 27 Aug 2013 05:22:42 +0900 (JST)
+" Version:     1.0.1
+" Last Change: Fri,  9 Oct 2015 17:31:34 +0900 (JST)
 " See Also:    http://ja.wikipedia.org/wiki/”’”L
 
 set background=light
@@ -97,16 +97,17 @@ hi WarningMsg     gui=bold guifg=#007bbb guibg=#c97586
 " Others
 "	Underlined(hyperlinks(HTML), ...)
 "	Ignore(white spaces, invisible characters)
-hi Underlined     gui=underline guifg=#4c6cb3 guibg=#f8fbf8
+hi Underlined     gui=underline
 hi Ignore         gui=none guifg=#f8fbf8 guibg=#f8fbf8
 
 " Cursors,
 "	Cursor(character in the cursor)
 "	CursorIM(character in the cursor when IME is ON)
-hi Cursor         gui=none guifg=#f8fbf8 guibg=#f7c114
-hi CursorIM       gui=none guifg=#f8fbf8 guibg=#f7c114
-hi lCursor        gui=none guifg=#f8fbf8 guibg=#f7c114
-hi CursorLine     gui=underline guibg=#f8fbf8
+hi Cursor         gui=none guifg=#2b2b2b guibg=#f7c114
+hi CursorIM       gui=none guifg=#2b2b2b guibg=#f7c114
+hi lCursor        gui=none guifg=#2b2b2b guibg=#f7c114
+hi CursorLine     gui=none               guibg=#f8fbf8
+hi CursorColumn   gui=none               guibg=#e8ecef
 
 " Diff
 hi DiffAdd        gui=bold guifg=#4c6cb3 guibg=#f39800
@@ -127,6 +128,7 @@ hi VisualNOS      gui=underline guifg=#474a4d guibg=#fcc800
 "	Question('yes|no' question)
 hi Directory      gui=none guifg=#4c6cb3 guibg=#f8fbf8
 hi FoldColumn     gui=bold guifg=#474a4d guibg=#f39800
+hi ColorColumn    gui=none               guibg=#f3f3f2
 hi Folded         gui=bold guifg=#474a4d guibg=#f39800
 hi LineNr         gui=underline guifg=#c0c6c9 guibg=#f8fbf8
 hi ModeMsg        gui=bold guifg=#c97586 guibg=#f8fbf8
