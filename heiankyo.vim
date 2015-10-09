@@ -1,8 +1,8 @@
 " Heiankyo colorscheme
 " $Id: heiankyo.vim,v 1.4 2010/01/31 23:43:04 ak Exp $
 " Author:      azumakuniyuki
-" Version:     1.0.8
-" Last Change: Sat, 21 Apr 2012 02:22:09 +0900 (JST)
+" Version:     1.0.9
+" Last Change: Fri,  9 Oct 2015 17:31:29 +0900 (JST)
 
 set background=dark
 hi clear
@@ -127,6 +127,7 @@ hi VisualNOS      gui=underline guifg=#ffffff guibg=#333631
 "	Question('yes|no' question)
 hi Directory      gui=none guifg=#adadad guibg=#333631
 hi FoldColumn     gui=bold guifg=#ffffff guibg=#0095d9ni
+hi ColorColumn    gui=none               guibg=#2b2b2b
 hi Folded         gui=bold guifg=#ffffff guibg=#0095d9ni
 hi LineNr         gui=underline guifg=#e83929 guibg=#333631
 hi ModeMsg        gui=bold guifg=#ffffff guibg=#333631
