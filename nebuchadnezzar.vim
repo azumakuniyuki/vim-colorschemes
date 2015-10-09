@@ -1,8 +1,8 @@
 " Nebuchadnezzar colorscheme
 " $Id: nebuchadnezzar.vim,v 1.4 2010/01/31 23:43:04 ak Exp $
 " Author:      azumakuniyuki
-" Version:     1.0.7
-" Last Change: Fri,  9 Oct 2015 17:32:19 +0900 (JST)
+" Version:     1.0.8
+" Last Change: Fri,  9 Oct 2015 21:05:21 +0900 (JST)
 
 set background=dark
 hi clear
@@ -106,7 +106,7 @@ hi Ignore         gui=none guifg=#16160e guibg=#16160e
 hi Cursor         gui=none guifg=#16160e guibg=#fffffc
 hi CursorIM       gui=none guifg=#3e62ad guibg=#e5e4e6
 hi lCursor        gui=none guifg=#3e62ad guibg=#e5e4e6
-hi CursorLine     gui=underline guibg=#16160e
+hi CursorLine     gui=underline          guibg=#16160e
 hi CursorColumn   gui=none               guibg=#2b2b2b
 
 " Diff
@@ -127,7 +127,7 @@ hi VisualNOS      gui=underline guifg=#5b7e91 guibg=#16160e
 "   StatusLineNC(Non-Current Windows's status line)
 "   Question('yes|no' question)
 hi Directory      gui=none guifg=#e5e4e6 guibg=#16160e
-hi ColorColumn    gui=none               guibg=
+hi ColorColumn    gui=none               guibg=#1e50a2
 hi FoldColumn     gui=bold guifg=#5b7e91 guibg=#3e62ad
 hi Folded         gui=bold guifg=#5b7e91 guibg=#3e62ad
 hi LineNr         gui=underline guifg=#426579 guibg=#16160e
@@ -139,7 +139,6 @@ hi StatusLineNC   gui=bold guifg=#2b2b2b guibg=#5b7e91
 hi Title          gui=bold guifg=#e5e4e6 guibg=#2b2b2b
 hi WildMenu       gui=none guifg=#3e62ad guibg=#e5e4e6
 hi VertSplit      gui=none guifg=#5b7e91 guibg=#5b7e91
-hi ColorColumn    gui=none guifg=#e5e4e6 guibg=#2b2b2b
 
 " Non texts
 "   NonText(~,@,character specified by 'showbreak')
