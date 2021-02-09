@@ -1,7 +1,7 @@
 " Shironeko colorscheme
 " Author:      azumakuniyuki
-" Version:     1.0.1
-" Last Change: Fri,  9 Oct 2015 17:31:34 +0900 (JST)
+" Version:     1.0.2
+" Last Change: Tue,  9 Feb 2021 07:56:33 +0900 (JST)
 " See Also:    http://ja.wikipedia.org/wiki/”’”L
 
 set background=light
@@ -19,7 +19,7 @@ let g:colors_name = 'Shironeko'
 hi Normal         gui=none guifg=#474a4d guibg=#f8fbf8
 "
 " Comment(/** **/, //...)
-hi Comment        gui=italic guifg=#c0c6c9 guibg=#f8fbf8
+hi Comment        gui=italic guifg=#afafb0 guibg=#f8fbf8
 
 " Constants
 "	Boolean(true,false)
