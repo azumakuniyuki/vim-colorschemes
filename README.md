@@ -1,10 +1,11 @@
 # vim-colorschemes
-----------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 ## Description
   gVim color schemes using Japanese traditional colors.
 
 ## Files
   * heiankyo.vim --------------- Former names for the city now known as Kyoto.
+  * michitsuna.vim ------------- Michitsuna: 元うちのネコ殿(別居しているうちのネコ)
   * mikeneko.vim --------------- Calico cat: 三毛猫
   * nebuchadnezzar.vim --------- King of the Neo-Babylonian Empire.
   * russian-blue.vim ----------- Russan blue: ロシアンブルー(猫)
