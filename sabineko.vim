@@ -143,8 +143,8 @@ hi VertSplit      gui=none guifg=#f4b3c2 guibg=#f4b3c2
 " Non texts
 "	NonText(~,@,character specified by 'showbreak')
 "	SpecialKey(keys defined by ':map', nonprintables)
-hi NonText        gui=none guifg=#241a08 guibg=#16160e
-hi SpecialKey     gui=none guifg=#241a08 guibg=#16160e
+hi NonText        gui=none guifg=#3f312b guibg=#16160e
+hi SpecialKey     gui=none guifg=#3f312b guibg=#16160e
 
 
 "     
