@@ -18,7 +18,7 @@ let g:colors_name = 'Michitsuna'
 hi Normal         gui=none guifg=#383c3c guibg=#f8f4e6
 "
 " Comment(/** **/, //...)
-hi Comment        gui=italic guifg=#cbb994 guibg=#f8f4e6
+hi Comment        gui=italic guifg=#bfa46f guibg=#f8f4e6
 
 " Constants
 "	Boolean(true,false)
