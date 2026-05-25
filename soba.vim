@@ -1,8 +1,8 @@
 " Soba colorscheme
 " $Id: soba.vim,v 1.4 2010/01/31 23:43:04 ak Exp $
 " Author:      azumakuniyuki
-" Version:     1.0.2
-" Last Change: Sun,  8 Jan 2012 02:25:27 +0900 (JST)
+" Version:     1.0.3
+" Last Change: Mon, 25 May 2026 18:05:09 +0900 (JST)
 
 set background=dark
 hi clear
@@ -14,12 +14,8 @@ let g:colors_name = 'Soba'
 
 " See ':h syntax' or
 " http://sites.google.com/site/vimdocja/syntax-html
-
-" Normal(normal text)
-hi Normal         gui=none guifg=#474a4d guibg=#d4dcd6
-"
-" Comment(/** **/, //...)
-hi Comment        gui=italic guifg=#9ea1a3 guibg=#d4dcd6
+hi Normal         gui=none   guifg=#474a4d guibg=#d4dcd6 " Normal(normal text)
+hi Comment        gui=italic guifg=#9ea1a3 guibg=#d4dcd6 " Comment(/** **/, //...)
 
 " Constants
 "	Boolean(true,false)
@@ -109,9 +105,9 @@ hi lCursor        gui=none guifg=#2f5d50 guibg=#433d3c
 hi CursorLine     gui=underline guibg=#d4dcd6
 
 " Diff
-hi DiffAdd        gui=bold guifg=#433d3c guibg=#2f5d50
-hi DiffChange     gui=none guifg=#433d3c guibg=#2f5d50
-hi DiffDelete     gui=none guifg=#433d3c guibg=#2f5d50
+hi DiffAdd        gui=bold guifg=#cee4ae guibg=#2f5d50
+hi DiffChange     gui=bold guifg=#f8e58c guibg=#2f5d50
+hi DiffDelete     gui=bold guifg=#ec6d71 guibg=#2f5d50
 hi DiffText       gui=bold guifg=#d4dcd6 guibg=#433d3c
 
 " Areas
@@ -132,6 +128,7 @@ hi LineNr         gui=underline guifg=#d4dcd6 guibg=#887f7a
 hi ModeMsg        gui=bold guifg=#494a41 guibg=#d4dcd6
 hi MoreMsg        gui=bold guifg=#494a41 guibg=#d4dcd6
 hi Question       gui=bold guifg=#494a41 guibg=#d4dcd6
+hi SignColumn     gui=bold guifg=#f8f4e6 guibg=#887f7a
 hi StatusLine     gui=bold guifg=#d4dcd6 guibg=#887f7a
 hi StatusLineNC   gui=bold guifg=#d4dcd6 guibg=#333631
 hi Title          gui=bold guifg=#433d3c guibg=#d4dcd6
