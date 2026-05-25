@@ -1,8 +1,8 @@
 " Nebuchadnezzar colorscheme
 " $Id: nebuchadnezzar.vim,v 1.4 2010/01/31 23:43:04 ak Exp $
 " Author:      azumakuniyuki
-" Version:     1.0.8
-" Last Change: Fri,  9 Oct 2015 21:05:21 +0900 (JST)
+" Version:     1.0.9
+" Last Change: Mon, 25 May 2026 17:31:30 +0900 (JST)
 
 set background=dark
 hi clear
@@ -110,9 +110,9 @@ hi CursorLine     gui=underline          guibg=#16160e
 hi CursorColumn   gui=none               guibg=#2b2b2b
 
 " Diff
-hi DiffAdd        gui=bold guifg=#e5e4e6 guibg=#3e62ad
-hi DiffChange     gui=none guifg=#e5e4e6 guibg=#3e62ad
-hi DiffDelete     gui=none guifg=#e5e4e6 guibg=#3e62ad
+hi DiffAdd        gui=bold guifg=#aacf53 guibg=#16160e
+hi DiffChange     gui=bold guifg=#f8b500 guibg=#16160e
+hi DiffDelete     gui=bold guifg=#e198b4 guibg=#16160e
 hi DiffText       gui=bold guifg=#16160e guibg=#e5e4e6
 
 " Areas
@@ -134,6 +134,7 @@ hi LineNr         gui=underline guifg=#426579 guibg=#16160e
 hi ModeMsg        gui=bold guifg=#5b7e91 guibg=#16160e
 hi MoreMsg        gui=bold guifg=#5b7e91 guibg=#16160e
 hi Question       gui=bold guifg=#5b7e91 guibg=#16160e
+hi SignColumn     gui=bold guifg=#f8f4e6 guibg=#16160e
 hi StatusLine     gui=bold guifg=#e5e4e6 guibg=#5b7e91
 hi StatusLineNC   gui=bold guifg=#2b2b2b guibg=#5b7e91
 hi Title          gui=bold guifg=#e5e4e6 guibg=#2b2b2b
