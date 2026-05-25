@@ -1,8 +1,8 @@
 " Shironeko colorscheme
 " Author:      azumakuniyuki
-" Version:     1.0.2
-" Last Change: Tue,  9 Feb 2021 07:56:33 +0900 (JST)
-" See Also:    http://ja.wikipedia.org/wiki/”’”L
+" Version:     1.0.3
+" Last Change: Mon, 25 May 2026 18:02:56 +0900 (JST)
+" See Also:    https://ja.wikipedia.org/wiki/”’”L
 
 set background=light
 hi clear
@@ -110,9 +110,9 @@ hi CursorLine     gui=none               guibg=#f8fbf8
 hi CursorColumn   gui=none               guibg=#e8ecef
 
 " Diff
-hi DiffAdd        gui=bold guifg=#4c6cb3 guibg=#f39800
-hi DiffChange     gui=none guifg=#4c6cb3 guibg=#f39800
-hi DiffDelete     gui=none guifg=#4c6cb3 guibg=#f39800
+hi DiffAdd        gui=bold guifg=#007b43 guibg=#f8fbf8
+hi DiffChange     gui=bold guifg=#6f4b3e guibg=#f8fbf8
+hi DiffDelete     gui=bold guifg=#d3381c guibg=#f8fbf8
 hi DiffText       gui=bold guifg=#f8fbf8 guibg=#4c6cb3
 
 " Areas
@@ -134,6 +134,7 @@ hi LineNr         gui=underline guifg=#c0c6c9 guibg=#f8fbf8
 hi ModeMsg        gui=bold guifg=#c97586 guibg=#f8fbf8
 hi MoreMsg        gui=bold guifg=#c97586 guibg=#f8fbf8
 hi Question       gui=bold guifg=#c97586 guibg=#f8fbf8
+hi SignColumn     gui=bold guifg=#f8f4e6 guibg=#f8fbf8
 hi StatusLine     gui=bold guifg=#f8fbf8 guibg=#007bbb
 hi StatusLineNC   gui=bold guifg=#f8fbf8 guibg=#007bbb
 hi Title          gui=bold guifg=#4c6cb3 guibg=#f8fbf8
