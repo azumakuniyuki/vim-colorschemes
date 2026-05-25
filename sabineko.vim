@@ -1,10 +1,9 @@
 " Sabineko colorscheme
 " Author:      azumakuniyuki
-" Version:     1.0.3
-" Last Change: Mon,  4 Aug 2014 14:23:49 +0900 (JST)
-
-" See http://ja.wikipedia.org/wiki/三毛猫
-"     http://en.wikipedia.org/wiki/Calico_cat
+" Version:     1.0.4
+" Last Change: Mon, 25 May 2026 17:58:19 +0900 (JST)
+" See:         https://ja.wikipedia.org/wiki/三毛猫
+"              https://en.wikipedia.org/wiki/Calico_cat
 
 set background=dark
 hi clear
@@ -111,9 +110,9 @@ hi lCursor        gui=none guifg=#16160e guibg=#f7c114
 hi CursorLine     gui=underline guibg=#16160e
 
 " Diff
-hi DiffAdd        gui=bold guifg=#dddcd6 guibg=#f39800
-hi DiffChange     gui=none guifg=#dddcd6 guibg=#f39800
-hi DiffDelete     gui=none guifg=#dddcd6 guibg=#f39800
+hi DiffAdd        gui=bold guifg=#aacf53 guibg=#16160e
+hi DiffChange     gui=bold guifg=#f8b500 guibg=#16160e
+hi DiffDelete     gui=bold guifg=#e198b4 guibg=#16160e
 hi DiffText       gui=bold guifg=#16160e guibg=#dddcd6
 
 " Areas
@@ -134,6 +133,7 @@ hi LineNr         gui=underline guifg=#783c1d guibg=#16160e
 hi ModeMsg        gui=bold guifg=#f4b3c2 guibg=#16160e
 hi MoreMsg        gui=bold guifg=#f4b3c2 guibg=#16160e
 hi Question       gui=bold guifg=#f4b3c2 guibg=#16160e
+hi SignColumn     gui=bold guifg=#f8f4e6 guibg=#16160e
 hi StatusLine     gui=bold guifg=#16160e guibg=#ee7800
 hi StatusLineNC   gui=bold guifg=#16160e guibg=#ee7800
 hi Title          gui=bold guifg=#dddcd6 guibg=#16160e
