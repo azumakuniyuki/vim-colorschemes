@@ -1,9 +1,8 @@
 " Russinan Blue colorscheme
 " Author:      azumakuniyuki
-" Version:     1.0.2
-" Last Change: Wed, 25 Apr 2012 14:58:59 +0900 (JST)
-
-" See http://en.wikipedia.org/wiki/Russian_Blue
+" Version:     1.0.3
+" Last Change: Mon, 25 May 2026 17:38:26 +0900 (JST)
+" See:         https://en.wikipedia.org/wiki/Russian_Blue
 
 set background=dark
 hi clear
@@ -110,9 +109,9 @@ hi lCursor        gui=none guifg=#ffffff guibg=#3eb370
 hi CursorLine     gui=underline guibg=#474a4d
 
 " Diff
-hi DiffAdd        gui=bold guifg=#dddcd6 guibg=#f39800
-hi DiffChange     gui=none guifg=#dddcd6 guibg=#f39800
-hi DiffDelete     gui=none guifg=#dddcd6 guibg=#f39800
+hi DiffAdd        gui=bold guifg=#aacf53 guibg=#474a4d
+hi DiffChange     gui=bold guifg=#f8b500 guibg=#474a4d
+hi DiffDelete     gui=bold guifg=#e198b4 guibg=#474a4d
 hi DiffText       gui=bold guifg=#474a4d guibg=#dddcd6
 
 " Areas
@@ -133,6 +132,7 @@ hi LineNr         gui=none guifg=#80989b guibg=#474a4d
 hi ModeMsg        gui=bold guifg=#bce2e8 guibg=#474a4d
 hi MoreMsg        gui=bold guifg=#bce2e8 guibg=#474a4d
 hi Question       gui=bold guifg=#bce2e8 guibg=#474a4d
+hi SignColumn     gui=bold guifg=#f8f4e6 guibg=#474a4d
 hi StatusLine     gui=bold guifg=#eaf4fc guibg=#507ea4
 hi StatusLineNC   gui=bold guifg=#eaf4fc guibg=#507ea4
 hi Title          gui=bold guifg=#dddcd6 guibg=#474a4d
