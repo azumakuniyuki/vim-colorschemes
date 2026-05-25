@@ -1,8 +1,8 @@
 " Heiankyo colorscheme
 " $Id: heiankyo.vim,v 1.4 2010/01/31 23:43:04 ak Exp $
 " Author:      azumakuniyuki
-" Version:     1.0.9
-" Last Change: Fri,  9 Oct 2015 17:31:29 +0900 (JST)
+" Version:     1.0.10
+" Last Change: Mon, 25 May 2026 06:31:29 +0900 (JST)
 
 set background=dark
 hi clear
@@ -126,9 +126,9 @@ hi VisualNOS      gui=underline guifg=#ffffff guibg=#333631
 "	StatusLineNC(Non-Current Windows's status line)
 "	Question('yes|no' question)
 hi Directory      gui=none guifg=#adadad guibg=#333631
-hi FoldColumn     gui=bold guifg=#ffffff guibg=#0095d9ni
+hi FoldColumn     gui=bold guifg=#ffffff guibg=#0095d9
 hi ColorColumn    gui=none               guibg=#2b2b2b
-hi Folded         gui=bold guifg=#ffffff guibg=#0095d9ni
+hi Folded         gui=bold guifg=#ffffff guibg=#0095d9
 hi LineNr         gui=underline guifg=#e83929 guibg=#333631
 hi ModeMsg        gui=bold guifg=#ffffff guibg=#333631
 hi MoreMsg        gui=bold guifg=#ffffff guibg=#333631
