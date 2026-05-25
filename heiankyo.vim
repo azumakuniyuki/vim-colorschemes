@@ -109,9 +109,9 @@ hi lCursor        gui=none guifg=#0095d9 guibg=#adadad
 hi CursorLine     gui=underline guibg=#333631
 
 " Diff
-hi DiffAdd        gui=bold guifg=#f8fbf8 guibg=#3eb370
-hi DiffChange     gui=none guifg=#f8fbf8 guibg=#3eb370
-hi DiffDelete     gui=none guifg=#f8fbf8 guibg=#3eb370
+hi DiffAdd        gui=bold guifg=#aacf53 guibg=#333631
+hi DiffChange     gui=bold guifg=#f8b500 guibg=#333631
+hi DiffDelete     gui=bold guifg=#e198b4 guibg=#333631
 hi DiffText       gui=bold guifg=#333631 guibg=#adadad
 
 " Areas
@@ -133,6 +133,7 @@ hi LineNr         gui=underline guifg=#e83929 guibg=#333631
 hi ModeMsg        gui=bold guifg=#ffffff guibg=#333631
 hi MoreMsg        gui=bold guifg=#ffffff guibg=#333631
 hi Question       gui=bold guifg=#ffffff guibg=#333631
+hi SignColumn     gui=bold guifg=#f8f4e6 guibg=#333631
 hi StatusLine     gui=bold guifg=#d4dcd6 guibg=#e83929
 hi StatusLineNC   gui=bold guifg=#d4dcd6 guibg=#e83929
 hi Title          gui=bold guifg=#adadad guibg=#333631
