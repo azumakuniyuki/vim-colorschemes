@@ -1,8 +1,8 @@
 " Mikeneko colorscheme
 " Author:      azumakuniyuki
-" Version:     1.0.1
-" Last Change: Fri,  9 Oct 2015 17:31:19 +0900 (JST)
-" See Also:    http://ja.wikipedia.org/wiki/三毛猫
+" Version:     1.0.2
+" Last Change: Mon, 25 May 2026 17:25:33 +0900 (JST)
+" See Also:    https://ja.wikipedia.org/wiki/三毛猫
 
 set background=light
 hi clear
@@ -109,9 +109,9 @@ hi lCursor        gui=none guifg=#f8fbf8 guibg=#f7c114
 hi CursorLine     gui=underline guibg=#f8fbf8
 
 " Diff
-hi DiffAdd        gui=bold guifg=#595857 guibg=#f39800
-hi DiffChange     gui=none guifg=#595857 guibg=#f39800
-hi DiffDelete     gui=none guifg=#595857 guibg=#f39800
+hi DiffAdd        gui=bold guifg=#007b43 guibg=#f39800
+hi DiffChange     gui=bold guifg=#6f4b3e guibg=#f39800
+hi DiffDelete     gui=bold guifg=#d3381c guibg=#f39800
 hi DiffText       gui=bold guifg=#f8fbf8 guibg=#595857
 
 " Areas
@@ -133,6 +133,7 @@ hi LineNr         gui=underline guifg=#c0c6c9 guibg=#f8fbf8
 hi ModeMsg        gui=bold guifg=#c97586 guibg=#f8fbf8
 hi MoreMsg        gui=bold guifg=#c97586 guibg=#f8fbf8
 hi Question       gui=bold guifg=#c97586 guibg=#f8fbf8
+hi SignColumn     gui=bold guifg=#f8f4e6 guibg=#f8fbf8
 hi StatusLine     gui=bold guifg=#f8fbf8 guibg=#f08300
 hi StatusLineNC   gui=bold guifg=#f8fbf8 guibg=#f08300
 hi Title          gui=bold guifg=#595857 guibg=#f8fbf8
