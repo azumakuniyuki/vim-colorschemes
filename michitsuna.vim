@@ -1,146 +1,128 @@
-" Mikeneko colorscheme
-" Author:      azumakuniyuki
-" Version:     1.0.0
-" Last Change: Tue,  9 Feb 2021 09:10:28 +0900 (JST)
+" Michitsuna a.k.a. neko-dono colourscheme
+" Author:   azumakuniyuki
+" Version:  2.0.0
+" URL:      https://github.com/azumakuniyuki/vim-colorschemes
+" Updated:  Mon, 25 May 2026 06:30:22 +0900 (JST)
 
 set background=light
 hi clear
-if exists("syntax_on")
-  syntax reset
-endif
+if exists("syntax_on") | syntax reset | endif
 
-let g:colors_name = 'Michitsuna'
+let g:colors_name   = 'Michitsuna'
+let s:ZougeIro      = '#f8f4e6'
+let s:NeriIro       = '#ede4cd'
+let s:MushiguriIro  = '#ebe1a9'
+let s:Soshoku       = '#eae5e3'
+let s:Shoujouhi     = '#e2041b'
+let s:AmeIro        = '#deb068'
+let s:AmaIro        = '#d6c6af'
+let s:ChoushunIro   = '#c97586'
+let s:Yamabukicha   = '#c89932'
+let s:HashibamiIro  = '#bfa46f'
+let s:Soho          = '#ab6953'
+let s:Kuwacha       = '#956f29'
+let s:Kokuboushoku  = '#7b6c3e'
+let s:KokeIro       = '#69821b'
+let s:Sumi          = '#595857'
+let s:NosimehanaIro = '#426579'
+let s:YoukanIro     = '#383c3c'
+let s:Ankokushoku   = '#16160e'
 
-" See ':h syntax' or
-" http://sites.google.com/site/vimdocja/syntax-html
+function! s:hi(gr, fg, bg, attr)
+  execute printf('hi %s guifg=%s guibg=%s gui=%s ctermfg=NONE ctermbg=NONE cterm=NONE', a:gr, a:fg, a:bg, a:attr)
+endfunction
 
-" Normal(normal text)
-hi Normal         gui=none guifg=#383c3c guibg=#f8f4e6
-"
-" Comment(/** **/, //...)
-hi Comment        gui=italic guifg=#bfa46f guibg=#f8f4e6
+call s:hi('Normal',     s:YoukanIro,    s:ZougeIro, 'none')
+call s:hi('Comment',    s:HashibamiIro, s:ZougeIro, 'italic')
+call s:hi('Identifier', s:Ankokushoku,  s:ZougeIro, 'bold') " Variable name
+call s:hi('Function',   s:Ankokushoku,  s:ZougeIro, 'none') " Function name
 
 " Constants
-"	Boolean(true,false)
-"	Character('c', '\n')
-"	Number(123, 0xff)
-"	Boolean(true, false)
-"	Float(3.1415, 2.7e10)
-"	String('string')
-hi Constant       gui=none guifg=#595857 guibg=#f8f4e6
-hi Boolean        gui=bold guifg=#595857 guibg=#f8f4e6
-hi Character      gui=none guifg=#383c3c guibg=#ede4cd
-hi Float          gui=none guifg=#595857 guibg=#f8f4e6
-hi Number         gui=none guifg=#595857 guibg=#f8f4e6
-hi String         gui=none guifg=#383c3c guibg=#ede4cd
-
-" Identifier(variable names)
-" Function(function names)
-hi Identifier     gui=bold guifg=#16160e guibg=#f8f4e6
-hi Function       gui=none guifg=#16160e guibg=#f8f4e6
+call s:hi('Constant',   s:Sumi,         s:ZougeIro, 'none')
+call s:hi('Boolean',    s:Sumi,         s:ZougeIro, 'bold') " true, false
+call s:hi('Character',  s:YoukanIro,    s:NeriIro,  'none') " 'c', '\n'
+call s:hi('Float',      s:Sumi,         s:ZougeIro, 'none') " 3.1415, 2.7e10
+call s:hi('Number',     s:Sumi,         s:ZougeIro, 'none') " 123, 0xff
+call s:hi('String',     s:YoukanIro,    s:NeriIro,  'none')
 
 " Statements
-"	Conditional(if, then, else, endif, switch,...)
-"	Repeat(while, for, do, ...)
-"	Label(case, default,...)
-"	Operator(sizeof, +, -, ...)
-"	Exception(try, catch, throw, ...)
-hi Statement      gui=bold guifg=#69821b guibg=#f8f4e6
-hi Conditional    gui=bold guifg=#69821b guibg=#f8f4e6
-hi Exception      gui=bold guifg=#69821b guibg=#f8f4e6
-hi Keyword        gui=bold guifg=#69821b guibg=#f8f4e6
-hi Label          gui=bold guifg=#69821b guibg=#f8f4e6
-hi Operator       gui=bold guifg=#69821b guibg=#f8f4e6
-hi Repeat         gui=bold guifg=#69821b guibg=#f8f4e6
+call s:hi('Statement',  s:KokeIro,      s:ZougeIro, 'bold')
+call s:hi('Conditional',s:KokeIro,      s:ZougeIro, 'bold') " if, then, else, endif, switch, ...
+call s:hi('Exception',  s:KokeIro,      s:ZougeIro, 'bold') " try, catch, throw, ...
+call s:hi('Keyword',    s:KokeIro,      s:ZougeIro, 'bold')
+call s:hi('Label',      s:KokeIro,      s:ZougeIro, 'bold') " case, default, ...
+call s:hi('Operator',   s:KokeIro,      s:ZougeIro, 'bold') " sizeof, +, -, ...
+call s:hi('Repeat',     s:KokeIro,      s:ZougeIro, 'bold') " while, for, do, ...
 
 " Preprocessors
-"	Include(#include)
-"	Define(#define)
-"	Macro(equals to #define)
-"	PreCondit(#if, #else, #endif, ...)
-hi Define         gui=none guifg=#956f29 guibg=#f8f4e6
-hi Include        gui=none guifg=#956f29 guibg=#f8f4e6
-hi Macro          gui=none guifg=#956f29 guibg=#f8f4e6
-hi PreCondit      gui=none guifg=#956f29 guibg=#f8f4e6
-hi PreProc        gui=none guifg=#956f29 guibg=#f8f4e6
+call s:hi('Define',     s:Kuwacha,      s:ZougeIro, 'none') " #define
+call s:hi('Include',    s:Kuwacha,      s:ZougeIro, 'none') " #include
+call s:hi('Macro',      s:Kuwacha,      s:ZougeIro, 'none')
+call s:hi('PreCondit',  s:Kuwacha,      s:ZougeIro, 'none') " #if, #else, #endif, ...
+call s:hi('PreProc',    s:Kuwacha,      s:ZougeIro, 'none')
 
 " Types
-"	Type(int, char, long, ...)
-"	StorageClass(static, register, volatile, ...)
-"	Structure(struct, union, enum, ...)
-"	Typedef(typedef declarations)
-hi StorageClass   gui=bold guifg=#ab6953 guibg=#f8f4e6
-hi Structure      gui=bold guifg=#ab6953 guibg=#f8f4e6
-hi Type           gui=bold guifg=#ab6953 guibg=#f8f4e6
-hi Typedef        gui=bold guifg=#ab6953 guibg=#f8f4e6
+call s:hi('StorageClass',   s:Soho,     s:ZougeIro, 'bold') " static, register, volatile, ...
+call s:hi('Structure',      s:Soho,     s:ZougeIro, 'bold') " struct, union, enum, ...
+call s:hi('Type',           s:Soho,     s:ZougeIro, 'bold') " int, char, long, ...
+call s:hi('Typedef',        s:Soho,     s:ZougeIro, 'bold')
 
 " Specials
-"	Special(special symbols)
-"	SpecialChar(special character constants)
-"	Tag(Ctl-])
-"	Delimiter,SpecialComment
-"	Debug(debug statements)
-hi Debug          gui=none guifg=#c97586 guibg=#f8f4e6
-hi Delimiter      gui=none guifg=#c97586 guibg=#f8f4e6
-hi Special        gui=none guifg=#c97586 guibg=#f8f4e6
-hi SpecialChar    gui=none guifg=#c97586 guibg=#f8f4e6
-hi SpecialComment gui=italic guifg=#426579 guibg=#f8f4e6
-hi Tag            gui=none guifg=#c97586 guibg=#f8f4e6
+call s:hi('Debug',          s:ChoushunIro,  s:ZougeIro, 'none')
+call s:hi('Delimiter',      s:ChoushunIro,  s:ZougeIro, 'none')
+call s:hi('Special',        s:ChoushunIro,  s:ZougeIro, 'none')
+call s:hi('SpecialChar',    s:ChoushunIro,  s:ZougeIro, 'none')
+call s:hi('SpecialComment', s:NosimehanaIro,s:ZougeIro, 'italic')
+call s:hi('Tag',            s:ChoushunIro,  s:ZougeIro, 'none')
 
 " Errors and Warnings
-hi Error          gui=bold guifg=#f8f4e6 guibg=#e2041b
-hi ErrorMsg       gui=bold guifg=#f8f4e6 guibg=#e2041b
-hi Todo           gui=none guifg=#69821b guibg=#c97586
-hi WarningMsg     gui=bold guifg=#69821b guibg=#c97586
+call s:hi('Error',          s:ZougeIro,     s:Shoujouhi,   'bold')
+call s:hi('ErrorMsg',       s:ZougeIro,     s:Shoujouhi,   'bold')
+call s:hi('Todo',           s:KokeIro,      s:ChoushunIro, 'none')
+call s:hi('WarningMsg',     s:KokeIro,      s:ChoushunIro, 'bold')
 
 " Others
-"	Underlined(hyperlinks(HTML), ...)
-"	Ignore(white spaces, invisible characters)
-hi Underlined     gui=underline guifg=#595857 guibg=#f8f4e6
-hi Ignore         gui=none guifg=#f8f4e6 guibg=#f8f4e6
+call s:hi('Underlined',     s:Sumi,      s:ZougeIro, 'underline') " hyperlinks(HTML), ...
+call s:hi('Ignore',         s:ZougeIro,  s:ZougeIro, 'none')      " white spaces, invisible characters
 
 " Cursors,
-"	Cursor(character in the cursor)
-"	CursorIM(character in the cursor when IME is ON)
-hi Cursor         gui=none guifg=#f8f4e6 guibg=#c89932
-hi CursorIM       gui=none guifg=#f8f4e6 guibg=#c89932
-hi lCursor        gui=none guifg=#f8f4e6 guibg=#c89932
-hi CursorLine     gui=underline          guibg=#f8f4e6
+call s:hi('Cursor',         s:ZougeIro,  s:Yamabukicha, 'none')
+call s:hi('CursorIM',       s:ZougeIro,  s:Yamabukicha, 'none')
+call s:hi('lCursor',        s:ZougeIro,  s:Yamabukicha, 'none')
+call s:hi('CursorLine',     'NONE',      s:ZougeIro,    'underline')
 
 " Diff
-hi DiffAdd        gui=bold guifg=#595857 guibg=#d6c6af
-hi DiffChange     gui=none guifg=#595857 guibg=#d6c6af
-hi DiffDelete     gui=none guifg=#595857 guibg=#d6c6af
-hi DiffText       gui=bold guifg=#f8f4e6 guibg=#595857
+call s:hi('DiffAdd',        s:KokeIro,   s:ZougeIro, 'bold')
+call s:hi('DiffChange',     s:Soho,      s:ZougeIro, 'bold')
+call s:hi('DiffDelete',     s:Shoujouhi, s:ZougeIro, 'bold')
+call s:hi('DiffText',       s:ZougeIro,  s:Sumi,     'bold')
 
 " Areas
-hi IncSearch      gui=none guifg=#f8f8fb guibg=#383c3c
-hi MatchParen     gui=none guifg=#f8f8fb guibg=#383c3c
-hi Search         gui=none guifg=#f8f8fb guibg=#383c3c
-hi Visual         gui=none guifg=#383c3c guibg=#deb068
-hi VisualNOS      gui=underline guifg=#383c3c guibg=#deb068
+call s:hi('IncSearch',      s:ZougeIro,  s:Sumi,     'none')
+call s:hi('MatchParen',     s:ZougeIro,  s:Sumi,     'none')
+call s:hi('Search',         s:ZougeIro,  s:Sumi,     'none')
+call s:hi('Visual',         s:YoukanIro, s:AmeIro,   'none')
+call s:hi('VisualNOS',      s:YoukanIro, s:AmeIro,   'underline')
 
 " Window elements
-"	ModeMsg(--INSERT--)
-"	StatusLineNC(Non-Current Windows's status line)
-"	Question('yes|no' question)
-hi Directory      gui=none guifg=#595857 guibg=#f8f4e6
-hi ColorColumn    gui=none               guibg=#ebe1a9
-hi FoldColumn     gui=bold guifg=#383c3c guibg=#d6c6af
-hi Folded         gui=bold guifg=#383c3c guibg=#d6c6af
-hi LineNr         gui=underline guifg=#7b6c3e guibg=#f8f4e6
-hi ModeMsg        gui=bold guifg=#c97586 guibg=#f8f4e6
-hi MoreMsg        gui=bold guifg=#c97586 guibg=#f8f4e6
-hi Question       gui=bold guifg=#c97586 guibg=#f8f4e6
-hi StatusLine     gui=bold guifg=#f8f4e6 guibg=#69821b
-hi StatusLineNC   gui=bold guifg=#f8f4e6 guibg=#69821b
-hi Title          gui=bold guifg=#595857 guibg=#f8f4e6
-hi WildMenu       gui=none guifg=#d6c6af guibg=#69821b
-hi VertSplit      gui=none guifg=#c97586 guibg=#c97586
+call s:hi('ColorColumn',    'NONE',         s:MushiguriIro, 'none')
+call s:hi('Directory',      s:Sumi,         s:ZougeIro,     'none')
+call s:hi('FoldColumn',     s:YoukanIro,    s:AmaIro,       'bold')
+call s:hi('Folded',         s:YoukanIro,    s:AmaIro,       'bold')
+call s:hi('LineNr',         s:Kokuboushoku, s:ZougeIro,     'underline')
+call s:hi('ModeMsg',        s:ChoushunIro,  s:ZougeIro,     'bold') " --INSERT--
+call s:hi('MoreMsg',        s:ChoushunIro,  s:ZougeIro,     'bold')
+call s:hi('Question',       s:ChoushunIro,  s:ZougeIro,     'bold') " 'yes|no' question
+call s:hi('SignColumn',     s:ZougeIro,     s:ZougeIro,     'bold')
+call s:hi('StatusLine',     s:ZougeIro,     s:KokeIro,      'bold')
+call s:hi('StatusLineNC',   s:ZougeIro,     s:KokeIro,      'bold') " Non-Current Windows's status line
+call s:hi('Title',          s:Sumi,         s:ZougeIro,     'bold')
+call s:hi('WildMenu',       s:AmaIro,       s:KokeIro,      'none')
+call s:hi('VertSplit',      s:ChoushunIro,  s:ChoushunIro,  'none')
 
 " Non texts
-"	NonText(~,@,character specified by 'showbreak')
-"	SpecialKey(keys defined by ':map', nonprintables)
-hi NonText        gui=none guifg=#eae5e3 guibg=#f8f4e6
-hi SpecialKey     gui=none guifg=#eae5e3 guibg=#f8f4e6
+call s:hi('NonText',    s:Soshoku,  s:ZougeIro, 'none') " ~, @, character specified by 'showbreak'
+call s:hi('SpecialKey', s:Soshoku,  s:ZougeIro, 'none') " keys defined by ':map', nonprintables
+
+delfunction s:hi
 
